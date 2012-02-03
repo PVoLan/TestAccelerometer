@@ -13,10 +13,6 @@ namespace TestAccelerometer
 	[Activity (Label = "TestAccelerometer", MainLauncher = true)]
 	public class Activity1 : Activity
 	{
-		TextView textX;
-		TextView textY;
-		TextView textZ;
-		
 		SensorManager sensorManager;
 		SensorListener sensorListener;
 
@@ -27,11 +23,6 @@ namespace TestAccelerometer
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			
-			textX = FindViewById<TextView> (Resource.Id.textX);
-			textY = FindViewById<TextView> (Resource.Id.textY);
-			textZ = FindViewById<TextView> (Resource.Id.textZ);
-			
 			sensorManager = (SensorManager)GetSystemService(Context.SensorService);
 			sensorListener = new SensorListener(this);
 		}
@@ -69,12 +60,6 @@ namespace TestAccelerometer
 				var val = e.Values;
 				Android.Util.Log.Info("-------------","Works for: " + (DateTime.Now - created));
 				Android.Util.Log.Info("-------------",string.Format("X: {0} Y: {1} Z: {2}", val[0], val[1], val[2] ));
-				
-				_activity.RunOnUiThread(() => {
-					_activity.textX.Text = string.Format("X: {0}", val[0]);
-					_activity.textY.Text = string.Format("Y: {0}", val[1]);
-					_activity.textZ.Text = string.Format("Z: {0}", val[2]);
-				});
 			}
 			
 			
