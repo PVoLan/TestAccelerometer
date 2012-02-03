@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAccelerometer", "TestAccelerometer.csproj", "{955A39EE-60FB-4A41-96C1-20C2D0E780E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{955A39EE-60FB-4A41-96C1-20C2D0E780E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955A39EE-60FB-4A41-96C1-20C2D0E780E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955A39EE-60FB-4A41-96C1-20C2D0E780E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955A39EE-60FB-4A41-96C1-20C2D0E780E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = TestAccelerometer.csproj
+	EndGlobalSection
+EndGlobal
